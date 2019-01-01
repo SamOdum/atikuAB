@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background: url(img/atiku-7.jpg) no-repeat center fixed;
+    background-size: cover;    
+}
+
+.container{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "section";
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 1fr;
+    grid-gap: 5%;
+}
+
+header{
+    grid-area: header;
+    font-size: 5vw;
+    padding: .5em;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    flex-grow: 3;
+}
+
+nav{
+    flex-grow: 1;
+}
+
+section{
+    grid-area: section;
+    font-size: 5vw;
+    padding: .5em;
+    text-align: left;
+}
